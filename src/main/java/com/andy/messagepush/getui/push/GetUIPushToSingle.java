@@ -146,7 +146,7 @@ public class GetUIPushToSingle {
         try {
             AbstractTemplate template = GetUIPushTemplate.transmissionTemplate(transmissionContent, GetUIPushTemplate.TransmissionType.ONE);
 
-            GetUIPushToSingle.push(cid, template);
+            return GetUIPushToSingle.push(cid, template);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -176,7 +176,7 @@ public class GetUIPushToSingle {
         try {
             AbstractTemplate template = GetUIPushTemplate.linkTemplate(style, linkUrl);
 
-            GetUIPushToSingle.push(cid, template);
+            return GetUIPushToSingle.push(cid, template);
         } catch (Exception e) {
             log.error("批量单推失败!", e);
         }
@@ -207,7 +207,7 @@ public class GetUIPushToSingle {
         try {
             AbstractTemplate template = GetUIPushTemplate.linkTemplate(style, linkUrl);
 
-            GetUIPushToSingle.push(cid, template);
+            return GetUIPushToSingle.push(cid, template);
         } catch (Exception e) {
             log.error("批量单推失败!", e);
         }
@@ -239,7 +239,7 @@ public class GetUIPushToSingle {
         try {
             AbstractTemplate template = GetUIPushTemplate.linkTemplate(style, linkUrl);
 
-            GetUIPushToSingle.push(cid, template);
+            return GetUIPushToSingle.push(cid, template);
         } catch (Exception e) {
             log.error("批量单推失败!", e);
         }
