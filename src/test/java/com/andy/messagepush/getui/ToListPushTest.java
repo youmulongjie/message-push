@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Description: 批量推（toList） 测试
+ * Description: 批量推（toList）测试
  * Author: Andy.wang
  * Date: 2019/10/16 15:33
  */

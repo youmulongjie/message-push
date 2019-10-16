@@ -4,7 +4,7 @@ message-push
 
 - [个推](#个推)
 
-### 个推
+##个推
 
     个推 官网：https://dev.getui.com/
     个推 为开发者提供了如下4种消息推送形式：
@@ -14,6 +14,7 @@ message-push
     3) toApp：简称“群推”，指向APP符合筛选条件的所有用户推送消息，支持定速推送、定时推送，支持条件的交并补功能
     4) toGroup：此方式为直播间定制方案，适用于直播间消息推送
 
+###
 - 第一步在 application.yml 中配置 个推应用信息
 ```yaml
 # 个推平台 应用配置
@@ -28,6 +29,7 @@ getui:
 
 - 个推 代码路径：com.andy.messagepush.getui 包下面
 - 单推 toSingle：封装方法是 GetUIPushToSingle.java 类，对应的测试类是 ToSinglePushTest.java
+- 批量推 toList：封装方法是 GetUIPushList.java 类，对应的测试类是 ToListPushTest.java
 ## Andy.wang
 
 <img src="doc/594580820.jpg" width="15%" alt="Andy.wang的QQ"/>

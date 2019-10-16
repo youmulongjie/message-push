@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Description:个推平台 “批量推”，指向制定的一批用户推送消息。参考：http://docs.getui.com/getui/server/java/push/
+ * Description: 个推平台 “批量推”，指向制定的一批用户推送消息。参考：http://docs.getui.com/getui/server/java/push/
  * Author: Andy.wang
  * Date: 2019/10/16 15:01
  */
@@ -114,7 +114,6 @@ public class GETUIPushToList {
 
         styleParam.setBigStyle6Text(bigText);
 
-
         AbstractNotifyStyle style = GetUIStyleTemplate.style6Text(styleParam);
 
         try {
@@ -143,9 +142,9 @@ public class GETUIPushToList {
         try {
             AbstractTemplate template = GetUIPushTemplate.transmissionTemplate(transmissionContent, GetUIPushTemplate.TransmissionType.ONE);
 
-            push(cidList, template);
+            return push(cidList, template);
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("‘批量推’失败!", e);
         }
 
         return null;
@@ -173,7 +172,7 @@ public class GETUIPushToList {
         try {
             AbstractTemplate template = GetUIPushTemplate.linkTemplate(style, linkUrl);
 
-            push(cidList, template);
+            return push(cidList, template);
         } catch (Exception e) {
             log.error("‘批量推’失败!", e);
         }
@@ -204,7 +203,7 @@ public class GETUIPushToList {
         try {
             AbstractTemplate template = GetUIPushTemplate.linkTemplate(style, linkUrl);
 
-            push(cidList, template);
+            return push(cidList, template);
         } catch (Exception e) {
             log.error("‘批量推’失败!", e);
         }
@@ -236,7 +235,7 @@ public class GETUIPushToList {
         try {
             AbstractTemplate template = GetUIPushTemplate.linkTemplate(style, linkUrl);
 
-            push(cidList, template);
+            return push(cidList, template);
         } catch (Exception e) {
             log.error("‘批量推’失败!", e);
         }
