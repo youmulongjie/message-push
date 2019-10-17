@@ -37,9 +37,7 @@ message-push
                 1) pushNotificationStyle0(String cid, String title, String text, String transmissionContent)
                 2) pushNotificationStyle6Pic(String cid, String title, String text, String picUrl, String transmissionContent)
                 3) pushNotificationStyle6Text(String cid, String title, String text, String bigText, String transmissionContent)
-                
                 4) pushTransmission(String cid, String transmissionContent)
-                
                 5) pushLinkStyle0(String cid, String title, String text, String linkUrl)
                 6) pushLinkStyle6Pic(String cid, String title, String text, String picUrl, String linkUrl)
                 7) pushLinkStyle6Text(String cid, String title, String text, String bigText, String linkUrl)
@@ -56,9 +54,7 @@ message-push
                 1) pushNotificationStyle0(List<String> cidList, String title, String text, String transmissionContent)
                 2) pushNotificationStyle6Pic(List<String> cidList, String title, String text, String picUrl, String transmissionContent)
                 3) pushNotificationStyle6Text(List<String> cidList, String title, String text, String bigText, String transmissionContent)
-                
                 4) pushTransmission(List<String> cidList, String transmissionContent)
-                
                 5) pushLinkStyle0(List<String> cidList, String title, String text, String linkUrl)
                 6) pushLinkStyle6Pic(List<String> cidList, String title, String text, String picUrl, String linkUrl)
                 7) pushLinkStyle6Text(List<String> cidList, String title, String text, String bigText, String linkUrl)
@@ -72,9 +68,7 @@ message-push
                 1) pushNotificationStyle0(String title, String text, String transmissionContent, String pushTime)
                 2) pushNotificationStyle6Pic(String title, String text, String picUrl, String transmissionContent, String pushTime)
                 3) pushNotificationStyle6Text(String title, String text, String bigText, String transmissionContent, String pushTime)
-                
                 4) pushTransmission(String transmissionContent, String pushTime)
-                
                 5) pushLinkStyle0(String title, String text, String linkUrl, String pushTime)
                 6) pushLinkStyle6Pic(String title, String text, String picUrl, String linkUrl, String pushTime)
                 7) pushLinkStyle6Text(String title, String text, String bigText, String linkUrl, String pushTime)
@@ -85,7 +79,9 @@ message-push
 
 ## 欢迎交流
 
-<img src="doc/594580820.jpg" width="15%" alt="Andy.wang的QQ"/>
-<img src="doc/wx.jpg" width="15%" alt="Andy.wang的微信"/>
+QQ  | 微信
+------------- | -------------
+<img src="doc/594580820.jpg" width="15%" alt="Andy.wang的QQ"/>  | <img src="doc/wx.jpg" width="15%" alt="Andy.wang的微信"/>
+
 
 
