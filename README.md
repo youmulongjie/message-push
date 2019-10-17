@@ -75,6 +75,13 @@ message-push
         + 使用可参考测试类：ToAPPPushTest.java
 + 3）**注意事项**
     + 需先在“个推”平台上注册账号，创建应用，将应用信息配置在 application.yml 中（**doc** 文件夹下的 getui_sdk.apk，匹配本示例中的配置信息，可以直接拿来测试。）
+    ```yaml
+    # 个推平台 应用配置
+    getui:
+      appId: oGPhdrgrpS61ixhWqmmxN3
+      appKey: B5Zgajcna4AUTJdJbgnMQ5
+      masterSecret: wbo2DYCRym66o87EntR2t5
+    ```
     + 在“个推”平台上查看应用信息 <img src="doc/getui.png" width="95%" alt="个推应用配置信息"/>
 
 ## 欢迎交流
