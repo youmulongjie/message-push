@@ -10,7 +10,7 @@ message-push
     + 个推官网：https://www.getui.com/
     
             个推的功能：消息推送、用户画像、应用统计、一键认证
-    + 消息推送 功能（参考：http://docs.getui.com/getui/server/java/template/）：
+    + 消息推送 功能（参考：http://docs.getui.com/getui/server/java/template/ ）：
         + 提供了如下3种通知样式：
             1) Style0：系统样式
             2) Style6-1：大图+文本样式
@@ -63,7 +63,7 @@ message-push
                 6) pushLinkStyle6Pic(List<String> cidList, String title, String text, String picUrl, String linkUrl)
                 7) pushLinkStyle6Text(List<String> cidList, String title, String text, String bigText, String linkUrl)
        + 使用可参考测试类：ToListPushTest.java 
-    + ##### toApp 群推
+    + ##### toApp
         + 封装工具类：GetUIPushToApp.java
         + 向指定应用的所有（或符合筛选条件的）用户群发推送消息。有定时、定速功能
             + 自主选择模板（封装类不满足需求可以自主选择模板）
