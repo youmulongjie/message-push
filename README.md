@@ -79,9 +79,12 @@ message-push
 
 ## 欢迎交流
 
-QQ  | 微信
-------------- | -------------
-<img src="doc/594580820.jpg" width="15%" alt="Andy.wang的QQ"/>  | <img src="doc/wx.jpg" width="15%" alt="Andy.wang的微信"/>
++ QQ
+    
+    <img src="doc/594580820.jpg" width="15%" alt="Andy.wang的QQ"/>
++ 微信
+
+    <img src="doc/wx.jpg" width="15%" alt="Andy.wang的微信"/>
 
 
 
