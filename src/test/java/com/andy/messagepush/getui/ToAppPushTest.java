@@ -1,7 +1,7 @@
 package com.andy.messagepush.getui;
 
 import com.andy.messagepush.getui.param.GetUIStyleParam;
-import com.andy.messagepush.getui.push.GETUIPushToApp;
+import com.andy.messagepush.getui.push.GetUIPushToApp;
 import com.andy.messagepush.getui.template.GetUIPushTemplate;
 import com.andy.messagepush.getui.template.GetUIStyleTemplate;
 import com.gexin.rp.sdk.template.AbstractTemplate;
@@ -36,7 +36,7 @@ public class ToAppPushTest {
         try {
             AbstractTemplate template = GetUIPushTemplate.notificationTemplate(style, transmissionContent, GetUIPushTemplate.TransmissionType.ONE);
 
-            GETUIPushToApp.push(template, pushTime);
+            GetUIPushToApp.push(template, pushTime);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -51,7 +51,7 @@ public class ToAppPushTest {
         String title = "饭点到了";
         String text = "韩梅梅你妈喊你回家吃中午饭了";
 
-        GETUIPushToApp.pushNotificationStyle0(title, text, null, pushTime);
+        GetUIPushToApp.pushNotificationStyle0(title, text, null, pushTime);
     }
 
     // 测试 单推（style6-1 样式 + NotificationTemplate）
@@ -61,7 +61,7 @@ public class ToAppPushTest {
         String text = "我的开源中国账号头像是葫芦娃";
         String picUrl = "https://oscimg.oschina.net/oscnet/up-c433d2b39ed5624fd813783da456026b.jpg";
 
-        GETUIPushToApp.pushNotificationStyle6Pic(title, text, picUrl, null, pushTime);
+        GetUIPushToApp.pushNotificationStyle6Pic(title, text, picUrl, null, pushTime);
     }
 
     // 测试 单推（style6-2 样式 + NotificationTemplate）
@@ -74,7 +74,7 @@ public class ToAppPushTest {
                 "自10月15日起进入公示及落户办理阶段。" +
                 "届时，今年申报积分落户的106403名申请人可登录积分落户在线申报系统查看本人年度积分和排名";
 
-        GETUIPushToApp.pushNotificationStyle6Text(title, text, bigText, null, pushTime);
+        GetUIPushToApp.pushNotificationStyle6Text(title, text, bigText, null, pushTime);
     }
 
     // 测试 单推（TransmissionTemplate），同方法 toSingle2()
@@ -85,7 +85,7 @@ public class ToAppPushTest {
                 "自10月15日起进入公示及落户办理阶段。" +
                 "届时，今年申报积分落户的106403名申请人可登录积分落户在线申报系统查看本人年度积分和排名";
 
-        GETUIPushToApp.pushTransmission(transmissionContent, pushTime);
+        GetUIPushToApp.pushTransmission(transmissionContent, pushTime);
     }
 
     // 测试 单推（style0 样式 + NotificationTemplate）,同 方法 toSingle3()
@@ -96,7 +96,7 @@ public class ToAppPushTest {
 
         String linkUrl = "https://github.com/youmulongjie";
 
-        GETUIPushToApp.pushLinkStyle0(title, text, linkUrl, pushTime);
+        GetUIPushToApp.pushLinkStyle0(title, text, linkUrl, pushTime);
     }
 
     // 测试 单推（style6-1 样式 + NotificationTemplate）
@@ -108,7 +108,7 @@ public class ToAppPushTest {
 
         String linkUrl = "https://my.oschina.net/andy1989";
 
-        GETUIPushToApp.pushLinkStyle6Pic(title, text, picUrl, linkUrl, pushTime);
+        GetUIPushToApp.pushLinkStyle6Pic(title, text, picUrl, linkUrl, pushTime);
     }
 
     // 测试 单推（style6-2 样式 + NotificationTemplate）
@@ -122,6 +122,6 @@ public class ToAppPushTest {
 
         String linkUrl = "http://rsj.beijing.gov.cn/jflh/jf_zcwj/jf_gg/201910/t20191015_85290.html";
 
-        GETUIPushToApp.pushLinkStyle6Text(title, text, bigText, linkUrl, pushTime);
+        GetUIPushToApp.pushLinkStyle6Text(title, text, bigText, linkUrl, pushTime);
     }
 }

@@ -1,7 +1,7 @@
 package com.andy.messagepush.getui;
 
 import com.andy.messagepush.getui.param.GetUIStyleParam;
-import com.andy.messagepush.getui.push.GETUIPushToList;
+import com.andy.messagepush.getui.push.GetUIPushToList;
 import com.andy.messagepush.getui.template.GetUIPushTemplate;
 import com.andy.messagepush.getui.template.GetUIStyleTemplate;
 import com.gexin.rp.sdk.template.AbstractTemplate;
@@ -44,7 +44,7 @@ public class ToListPushTest {
             cidList.add(cid);
             cidList.add(cid2);
 
-            GETUIPushToList.push(cidList, template);
+            GetUIPushToList.push(cidList, template);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -68,7 +68,7 @@ public class ToListPushTest {
         String title = "饭点到了";
         String text = "韩梅梅你妈喊你回家吃中午饭了";
 
-        GETUIPushToList.pushNotificationStyle0(buildCidList(), title, text, null);
+        GetUIPushToList.pushNotificationStyle0(buildCidList(), title, text, null);
     }
 
     // 测试 单推（style6-1 样式 + NotificationTemplate）
@@ -78,7 +78,7 @@ public class ToListPushTest {
         String text = "我的开源中国账号头像是葫芦娃";
         String picUrl = "https://oscimg.oschina.net/oscnet/up-c433d2b39ed5624fd813783da456026b.jpg";
 
-        GETUIPushToList.pushNotificationStyle6Pic(buildCidList(), title, text, picUrl, null);
+        GetUIPushToList.pushNotificationStyle6Pic(buildCidList(), title, text, picUrl, null);
     }
 
     // 测试 单推（style6-2 样式 + NotificationTemplate）
@@ -91,7 +91,7 @@ public class ToListPushTest {
                 "自10月15日起进入公示及落户办理阶段。" +
                 "届时，今年申报积分落户的106403名申请人可登录积分落户在线申报系统查看本人年度积分和排名";
 
-        GETUIPushToList.pushNotificationStyle6Text(buildCidList(), title, text, bigText, null);
+        GetUIPushToList.pushNotificationStyle6Text(buildCidList(), title, text, bigText, null);
     }
 
     // 测试 单推（TransmissionTemplate），同方法 toSingle2()
@@ -102,7 +102,7 @@ public class ToListPushTest {
                 "自10月15日起进入公示及落户办理阶段。" +
                 "届时，今年申报积分落户的106403名申请人可登录积分落户在线申报系统查看本人年度积分和排名";
 
-        GETUIPushToList.pushTransmission(buildCidList(), transmissionContent);
+        GetUIPushToList.pushTransmission(buildCidList(), transmissionContent);
     }
 
     // 测试 单推（style0 样式 + NotificationTemplate）,同 方法 toSingle3()
@@ -113,7 +113,7 @@ public class ToListPushTest {
 
         String linkUrl = "https://github.com/youmulongjie";
 
-        GETUIPushToList.pushLinkStyle0(buildCidList(), title, text, linkUrl);
+        GetUIPushToList.pushLinkStyle0(buildCidList(), title, text, linkUrl);
     }
 
     // 测试 单推（style6-1 样式 + NotificationTemplate）
@@ -125,7 +125,7 @@ public class ToListPushTest {
 
         String linkUrl = "https://my.oschina.net/andy1989";
 
-        GETUIPushToList.pushLinkStyle6Pic(buildCidList(), title, text, picUrl, linkUrl);
+        GetUIPushToList.pushLinkStyle6Pic(buildCidList(), title, text, picUrl, linkUrl);
     }
 
     // 测试 单推（style6-2 样式 + NotificationTemplate）
@@ -139,6 +139,6 @@ public class ToListPushTest {
 
         String linkUrl = "http://rsj.beijing.gov.cn/jflh/jf_zcwj/jf_gg/201910/t20191015_85290.html";
 
-        GETUIPushToList.pushLinkStyle6Text(buildCidList(), title, text, bigText, linkUrl);
+        GetUIPushToList.pushLinkStyle6Text(buildCidList(), title, text, bigText, linkUrl);
     }
 }

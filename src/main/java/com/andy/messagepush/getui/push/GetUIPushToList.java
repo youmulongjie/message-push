@@ -25,8 +25,8 @@ import java.util.List;
  */
 @Component
 @Slf4j
-public class GETUIPushToList {
-    private static GETUIPushToList pushToList;
+public class GetUIPushToList {
+    private static GetUIPushToList pushToList;
 
     @PostConstruct
     public void init() {

@@ -32,8 +32,8 @@ import java.util.List;
  */
 @Component
 @Slf4j
-public class GETUIPushToApp {
-    private static GETUIPushToApp pushToApp;
+public class GetUIPushToApp {
+    private static GetUIPushToApp pushToApp;
 
     @PostConstruct
     public void init() {
@@ -66,7 +66,7 @@ public class GETUIPushToApp {
         try {
             AbstractTemplate template = GetUIPushTemplate.notificationTemplate(style, transmissionContent, GetUIPushTemplate.TransmissionType.ONE);
 
-            return GETUIPushToApp.push(template, pushTime);
+            return GetUIPushToApp.push(template, pushTime);
         } catch (Exception e) {
             log.error("toApp‘执行群推’失败!", e);
         }
@@ -97,7 +97,7 @@ public class GETUIPushToApp {
         try {
             AbstractTemplate template = GetUIPushTemplate.notificationTemplate(style, transmissionContent, GetUIPushTemplate.TransmissionType.ONE);
 
-            return GETUIPushToApp.push(template, pushTime);
+            return GetUIPushToApp.push(template, pushTime);
         } catch (Exception e) {
             log.error("toApp‘执行群推’失败!", e);
         }
@@ -129,7 +129,7 @@ public class GETUIPushToApp {
         try {
             AbstractTemplate template = GetUIPushTemplate.notificationTemplate(style, transmissionContent, GetUIPushTemplate.TransmissionType.ONE);
 
-            return GETUIPushToApp.push(template, pushTime);
+            return GetUIPushToApp.push(template, pushTime);
         } catch (Exception e) {
             log.error("toApp‘执行群推’失败!", e);
         }
@@ -152,7 +152,7 @@ public class GETUIPushToApp {
         try {
             AbstractTemplate template = GetUIPushTemplate.transmissionTemplate(transmissionContent, GetUIPushTemplate.TransmissionType.ONE);
 
-            return GETUIPushToApp.push(template, pushTime);
+            return GetUIPushToApp.push(template, pushTime);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -182,7 +182,7 @@ public class GETUIPushToApp {
         try {
             AbstractTemplate template = GetUIPushTemplate.linkTemplate(style, linkUrl);
 
-            return GETUIPushToApp.push(template, pushTime);
+            return GetUIPushToApp.push(template, pushTime);
         } catch (Exception e) {
             log.error("toApp‘执行群推’失败!", e);
         }
@@ -213,7 +213,7 @@ public class GETUIPushToApp {
         try {
             AbstractTemplate template = GetUIPushTemplate.linkTemplate(style, linkUrl);
 
-            return GETUIPushToApp.push(template, pushTime);
+            return GetUIPushToApp.push(template, pushTime);
         } catch (Exception e) {
             log.error("toApp‘执行群推’失败!", e);
         }
@@ -245,7 +245,7 @@ public class GETUIPushToApp {
         try {
             AbstractTemplate template = GetUIPushTemplate.linkTemplate(style, linkUrl);
 
-            return GETUIPushToApp.push(template, pushTime);
+            return GetUIPushToApp.push(template, pushTime);
         } catch (Exception e) {
             log.error("toApp‘执行群推’失败!", e);
         }
