@@ -78,7 +78,6 @@ message-push
     + 在“个推”平台上查看应用信息 <img src="doc/getui.png" width="95%" alt="个推应用配置信息"/>
 
 ## 欢迎交流
-
 + QQ
     
     <img src="doc/594580820.jpg" width="15%" alt="Andy.wang的QQ"/>
